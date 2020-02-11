@@ -7,4 +7,9 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function() {
+  this.route('groups', function() {
+    this.route('group',{ path:'/:group_id'});
+  });
+  this.route('posts');
+  this.route('interconnections');
 });

@@ -1,5 +1,16 @@
 {{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
 {{!-- Feel free to remove this! --}}
+<nav class="navbar  navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Adresse Book</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+</nav>
+{{#link-to 'interconnections'}}
+Go
+{{/link-to}}
 
+
+<div >
 {{outlet}}
+</div>

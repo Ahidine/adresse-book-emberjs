@@ -1,0 +1,24 @@
+<div class="row">
+	<div class="col-3">
+		<ul class="list-group">
+			{{#each model as |group| }}
+				{{#active-link}}  
+					{{#link-to 'groups.group' group  class="list-group-item list-group-item-action"}}
+					 {{group.title}} 
+					{{/link-to}}
+				{{/active-link}}
+		{{/each}}
+		</ul>
+		<br> 
+		 <button {{ on "click" addGroup }} class="btn btn-warning">Add new record </button>
+</div>
+<div class="col-9">
+	{{outlet}}
+</div>
+</div>
+
+
+
+
+
+
